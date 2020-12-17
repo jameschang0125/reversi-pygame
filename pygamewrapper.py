@@ -1,5 +1,7 @@
 import pygame
 from pygame.constants import USEREVENT, MOUSEBUTTONDOWN, MOUSEMOTION
+import os
+os.environ["SDL_VIDEODRIVER"] = "dummy"
 
 class PyGameWrapper(object):
     def __init__(self, width, height, actions={}):
